@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DIO_JogoRPG.src.Entities;
+using System;
+using static System.Console;
 
 namespace DIO_JogoRPG
 {
@@ -6,7 +8,12 @@ namespace DIO_JogoRPG
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Knight knight = new Knight("Arus", 23, "Knight");
+            Wizard wizard = new Wizard("Jennica", 23, "White Wizard");
+
+            WriteLine(knight.Attack());
+            WriteLine(wizard.Attack());
         }
     }
 }
